@@ -1,0 +1,98 @@
+.study-plan-page {
+    min-height: 100vh;
+    background: var(--color-bg-secondary);
+    padding-bottom: var(--spacing-3xl);
+}
+
+.plan-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.plan-info {
+    display: flex;
+    gap: var(--spacing-2xl);
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.info-item .label {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.info-item .value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.weeks-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.week-card {
+    transition: all var(--transition-base);
+}
+
+.week-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.week-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.week-goals {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-lg);
+    font-style: italic;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.task-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.task-item:hover {
+    background: var(--color-gray-200);
+}
+
+.task-content {
+    flex: 1;
+}
+
+.task-title {
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+}
+
+.task-meta {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    display: flex;
+    gap: var(--spacing-sm);
+}
